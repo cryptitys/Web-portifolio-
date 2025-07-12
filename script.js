@@ -14,3 +14,14 @@ function typeWriter(element, text, speed) {
 // Uso:
 const subtitle = document.querySelector('.subtitle');
 typeWriter(subtitle, "Desenvolvedor | Criativo ", 100);
+
+// Navegação suave
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
