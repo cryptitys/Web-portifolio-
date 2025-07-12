@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span>MeuPortfólio</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="profile-container">
+                <div class="profile-frame">
+                    <img src="images/logo.png" alt="Minha Foto" class="profile-img">
+                </div>
+                <h1>Olá, eu sou <span class="highlight">[Seu Nome]</span></h1>
+                <p class="subtitle">Desenvolvedor | Criativo | Profissional</p>
+            </div>
+        </section>
+
+        <section id="projetos" class="projects-section">
+            <h2>PROJETOS</h2>
+            <div class="categories">
+                <button class="category-btn active">Todos</button>
+                <button class="category-btn">Comunidade</button>
+                <button class="category-btn">Pessoal</button>
+                <button class="category-btn">Dev-Júnior</button>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Projetos serão adicionados dinamicamente -->
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <span class="project-category">Comunidade</span>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <h3>Projeto 2</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <span class="project-category">Pessoal</span>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <h3>Projeto 3</h3>
+                    <p>Descrição breve do projeto.</p>
+                    <span class="project-category">Dev-Júnior</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contact-section">
+            <h2>Entre em Contato</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Seu Nome" required>
+                <input type="email" placeholder="Seu Email" required>
+                <textarea placeholder="Sua Mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
