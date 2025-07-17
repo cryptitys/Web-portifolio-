@@ -1,102 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>《 Meu Portfólio 》</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>《 Meu Portfólio 》</title>
+  <meta name="description" content="Portfólio de Cryptitys - Desenvolvedor criativo. Projetos pessoais, comunidade e Dev Júnior.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-  <span>Meu Portfólio</span>
-  <a href="https://emoji.gg/emoji/87541-verified" target="_blank">
-    <img src="https://cdn3.emoji.gg/emojis/87541-verified.png" width="20px" height="20px" alt="Verified">
-  </a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projetos">Projetos</a></li>              
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <span>Meu Portfólio</span>
+        <a href="https://emoji.gg/emoji/87541-verified" target="_blank">
+          <img src="https://cdn3.emoji.gg/emojis/87541-verified.png" width="20" height="20" alt="Verificado">
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="profile-container">
-                <div class="profile-frame">
-                    <img src="Image/logo.jpg" alt="Minha Foto" class="profile-img">
-                </div>
-                <h1>.<span class="highlight">cryptitys🪄</span></h1>
-                <p class="subtitle">.</p>
-            </div>
-        </section>
+  <main>
+    <section id="home" class="hero">
+      <div class="profile-container">
+        <div class="profile-frame">
+          <img src="Image/logo.jpg" alt="Minha Foto" class="profile-img" />
+        </div>
+        <h1><span class="highlight">cryptitys🪄</span></h1>
+        <p class="subtitle"></p>
+      </div>
+    </section>
 
-        <section id="projetos" class="projects-section">
-            <h2>PROJETOS</h2>
-            <div class="categories">
-                <button class="category-btn">Todos</button>
-                <button class="category-btn">Comunidade</button>
-                <button class="category-btn">Pessoal</button>
-                <button class="category-btn">Dev-Júnior</button>
-            </div>
-            
-            <div class="projects-grid">
-                <!-- Projetos serão adicionados dinamicamente -->
-                <div>
-  <a href="https://cryptitys.github.io/Cora-o.particulas/" target="_blank">
-    <img src="https://cdn3.emoji.gg/emojis/94305-light-blue-heart.gif" width="64px" height="64px" alt="Light_blue_heart">
-  </a>
-                    
-                    
-  <a href="https://jornal-ata.netlify.app/" target="_blank">
-       <img src="https://cdn3.emoji.gg/emojis/27310-extra-extra.gif" width="64px" height="64px" alt="extra_extra">
-  </a>
+    <section id="projetos" class="projects-section">
+      <h2>PROJETOS</h2>
+      <div class="categories">
+        <button class="category-btn active" data-category="todos">Todos</button>
+        <button class="category-btn" data-category="comunidade">Comunidade</button>
+        <button class="category-btn" data-category="pessoal">Pessoal</button>
+        <button class="category-btn" data-category="dev-júnior">Dev-Júnior</button>
+      </div>
 
-                    
-    <a href="https://cryptitys.github.io/AstroGsme/" target="_blank">
-       <img src="https://cdn3.emoji.gg/emojis/6001-gaming-circle.png" width="64px" height="64px" alt="" width="64px" height="64px" alt="extra_extra">
-                    </a>
+      <div class="projects-grid">
+        <div class="project-card" data-category="pessoal">
+          <img src="https://cdn3.emoji.gg/emojis/94305-light-blue-heart.gif" alt="Projeto coração" />
+          <h3>Coração Partículas</h3>
+          <p>Projeto visual com partículas animadas.</p>
+          <span class="project-category">Pessoal</span>
+          <a href="https://cryptitys.github.io/Cora-o.particulas/" target="_blank">Acessar</a>
+        </div>
 
-                    
-       <a href="https://cryptitys.github.io/Clock.Vtr/" target="_blank">
-       <img src="https://cdn3.emoji.gg/emojis/1031-pixel-clock.gif" width="64px" height="64px" alt="pixel_clock"></a>
-                    </a>
-                </div>
+        <div class="project-card" data-category="comunidade">
+          <img src="https://cdn3.emoji.gg/emojis/27310-extra-extra.gif" alt="Jornal ATA" />
+          <h3>Jornal ATA</h3>
+          <p>Site escolar dinâmico para divulgação de eventos.</p>
+          <span class="project-category">Comunidade</span>
+          <a href="https://jornal-ata.netlify.app/" target="_blank">Acessar</a>
+        </div>
 
+        <div class="project-card" data-category="dev-júnior">
+          <img src="https://cdn3.emoji.gg/emojis/6001-gaming-circle.png" alt="Astro Game" />
+          <h3>Astro Game</h3>
+          <p>Experiência de jogo espacial com HTML/CSS.</p>
+          <span class="project-category">Dev-Júnior</span>
+          <a href="https://cryptitys.github.io/AstroGsme/" target="_blank">Acessar</a>
+        </div>
 
-                <p>clique nos gif e acesse os projetos</p>
-                
-                <div class="project-card">
-  <div class="image-gif">
-    <img src="Image/202512.gif" alt="meu gif" class="profile2-gif">
-  </div>
-  <h3>🪄🌬</h3>
-  <p>
-    Talvez não sou o melhor de todos, mas não existe limite pro conhecimento né?
-    Tá aí, e tem mais viu...
-  </p>
-  <span class="project-category">Pessoal</span>
-                </div>
-                
-            </div>
-        </section>
+        <div class="project-card" data-category="pessoal">
+          <img src="https://cdn3.emoji.gg/emojis/1031-pixel-clock.gif" alt="Relógio Pixel" />
+          <h3>Relógio Pixel</h3>
+          <p>Relógio animado com estilo retrô.</p>
+          <span class="project-category">Pessoal</span>
+          <a href="https://cryptitys.github.io/Clock.Vtr/" target="_blank">Acessar</a>
+        </div>
+      </div>
+    </section>
 
-        <section 
-            <div class="social-links">                
-                <a href="https://github.com/cryptitys"><i class="fab fa-github" target="_blank"> </i></a>
-                <a href="https://www.instagram.com/vitorrodrigues._s?igsh=amM4NmJhc213b2Nk"><i class="fab fa-instagram" target="_blank"> </i></a>
-                <a href="mailto:vrodriguespereira11@gmail.com"><i class="fas fa-envelope" target="_blank"> </i></a>
-            </div>
-        </section>
-    </main>
+    <section id="contato" class="contact-section">
+      <h2>Contato</h2>
+      <div class="social-links">
+        <a href="https://github.com/cryptitys" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/vitorrodrigues._s" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:vrodriguespereira11@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <p>&copy;  2025 Meu Portfólio | Todos os direitos reservados.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Meu Portfólio | Todos os direitos reservados.</p>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
-</html>
+    </html>
