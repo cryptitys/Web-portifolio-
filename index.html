@@ -2,98 +2,75 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>《 Meu Portfólio 》</title>
-  <meta name="description" content="Portfólio de Cryptitys - Desenvolvedor criativo. Projetos pessoais, comunidade e Dev Júnior.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meu Portfólio</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
+
   <header>
-    <nav class="navbar">
-      <div class="logo">
-        <span>Meu Portfólio</span>
-        <a href="https://emoji.gg/emoji/87541-verified" target="_blank">
-          <img src="https://cdn3.emoji.gg/emojis/87541-verified.png" width="20" height="20" alt="Verificado">
-        </a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
+    <h1>Meu Portfólio <span style="color:#9d4edd;">✔️</span></h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
     </nav>
   </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="profile-container">
-        <div class="profile-frame">
-          <img src="Image/logo.jpg" alt="Minha Foto" class="profile-img" />
-        </div>
-        <h1><span class="highlight">cryptitys🪄</span></h1>
-        <p class="subtitle"></p>
-      </div>
-    </section>
+  <section id="home">
+    <h2 class="title">Bem-vindo!</h2>
+    <p class="subtitle">Aqui estão alguns dos meus projetos pessoais e escolares.</p>
+  </section>
 
-    <section id="projetos" class="projects-section">
-      <h2>PROJETOS</h2>
-      <div class="categories">
-        <button class="category-btn active" data-category="todos">Todos</button>
-        <button class="category-btn" data-category="comunidade">Comunidade</button>
-        <button class="category-btn" data-category="pessoal">Pessoal</button>
-        <button class="category-btn" data-category="dev-júnior">Dev-Júnior</button>
+  <section id="projetos">
+    <h2 class="title">Projetos</h2>
+    <div class="projects-container">
+
+      <div class="project-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Coração Partículas">
+        <h3>Coração Partículas</h3>
+        <p>Projeto visual com partículas animadas.</p>
+        <span class="category">Pessoal</span>
+        <a href="#">Acessar</a>
       </div>
 
-      <div class="projects-grid">
-        <div class="project-card" data-category="pessoal">
-          <img src="https://cdn3.emoji.gg/emojis/94305-light-blue-heart.gif" alt="Projeto coração" />
-          <h3>Coração Partículas</h3>
-          <p>Projeto visual com partículas animadas.</p>
-          <span class="project-category">Pessoal</span>
-          <a href="https://cryptitys.github.io/Cora-o.particulas/" target="_blank">Acessar</a>
-        </div>
-
-        <div class="project-card" data-category="comunidade">
-          <img src="https://cdn3.emoji.gg/emojis/27310-extra-extra.gif" alt="Jornal ATA" />
-          <h3>Jornal ATA</h3>
-          <p>Site escolar dinâmico para divulgação de eventos.</p>
-          <span class="project-category">Comunidade</span>
-          <a href="https://jornal-ata.netlify.app/" target="_blank">Acessar</a>
-        </div>
-
-        <div class="project-card" data-category="dev-júnior">
-          <img src="https://cdn3.emoji.gg/emojis/6001-gaming-circle.png" alt="Astro Game" />
-          <h3>Astro Game</h3>
-          <p>Experiência de jogo espacial com HTML/CSS.</p>
-          <span class="project-category">Dev-Júnior</span>
-          <a href="https://cryptitys.github.io/AstroGsme/" target="_blank">Acessar</a>
-        </div>
-
-        <div class="project-card" data-category="pessoal">
-          <img src="https://cdn3.emoji.gg/emojis/1031-pixel-clock.gif" alt="Relógio Pixel" />
-          <h3>Relógio Pixel</h3>
-          <p>Relógio animado com estilo retrô.</p>
-          <span class="project-category">Pessoal</span>
-          <a href="https://cryptitys.github.io/Clock.Vtr/" target="_blank">Acessar</a>
-        </div>
+      <div class="project-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/609/609803.png" alt="Jornal ATA">
+        <h3>Jornal ATA</h3>
+        <p>Site escolar dinâmico para divulgação de eventos.</p>
+        <span class="category">Comunidade</span>
+        <a href="#">Acessar</a>
       </div>
-    </section>
 
-    <section id="contato" class="contact-section">
-      <h2>Contato</h2>
-      <div class="social-links">
-        <a href="https://github.com/cryptitys" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/vitorrodrigues._s" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:vrodriguespereira11@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      <div class="project-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1087/1087815.png" alt="Astro Game">
+        <h3>Astro Game</h3>
+        <p>Experiência de jogo espacial com HTML/CSS.</p>
+        <span class="category">Dev-Júnior</span>
+        <a href="#">Acessar</a>
       </div>
-    </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Meu Portfólio | Todos os direitos reservados.</p>
+      <div class="project-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3126/3126590.png" alt="Relógio Pixel">
+        <h3>Relógio Pixel</h3>
+        <p>Relógio animado com estilo retrô.</p>
+        <span class="category">Pessoal</span>
+        <a href="#">Acessar</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="contato">
+    <h2>Contato</h2>
+    <p>sobre mim[*><*]</p>
+    <div class="social-icons">
+      <a href="https://instagram.com/seuusuario" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/seuusuario" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:seuemail@email.com"><i class="fas fa-envelope"></i></a>
+    </div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
-    </html>
+  </html>
